@@ -4,6 +4,10 @@ abstract class AppError {
   AppError({required this.error});
 }
 
+class GenericError extends AppError {
+  GenericError({required super.error});
+}
+
 class JSONError extends AppError {
   JSONError({required super.error});
 }
